@@ -82,7 +82,7 @@ dialog{background:var(--p);color:var(--tx);border:1px solid var(--ln);border-rad
 
 <section class="s" style="background:var(--p)" id="resenas"><div class="w"><h2>Lo que dicen los registrados</h2><p class="mt" id="rvAvg"></p><div class="g2" id="rvL" style="margin:20px 0"></div>
 <div class="card" id="rvF" style="background:var(--bg)"></div></div></section>
-<section class="s"><div class="w"><div class="card"><h2>Dinos qué opinas</h2><p class="mt" style="margin-bottom:16px">Escríbele al equipo de GymPro: sugerencias, quejas o ideas.</p><div class="fm" style="grid-template-columns:1fr"><label>Tu correo<input id="oE" type="email" placeholder="tu@gmail.com"></label><label>Mensaje<textarea id="oM" maxlength="500"></textarea></label><div><button class="btn g" onclick="opina()">Enviar al equipo</button></div></div></div></div></section>
+<section class="s"><div class="w"><div class="card"><h2>Dinos qué opinas</h2><p class="mt" style="margin-bottom:16px">Escríbele al equipo de GymPro: sugerencias, quejas o ideas.</p><div class="fm" style="grid-template-columns:1fr"><label>Tu correo<input id="oE" type="email" placeholder="gymevolutionadmin@gmail.com"></label><label>Mensaje<textarea id="oM" maxlength="500"></textarea></label><div><button class="btn g" onclick="opina()">Enviar al equipo</button></div></div></div></div></section>
 
 <section class="s" id="prueba"><div class="w"><div class="card"><h2>Reserva tu semana de prueba</h2><p class="mt" style="margin-bottom:16px">Te escribimos por WhatsApp en menos de una hora.</p>
 <div class="fm"><label>Nombre<input id="lN"></label><label>WhatsApp<input id="lT" inputmode="tel" placeholder="9XX XXX XXX"></label><label>Sede<select id="lS"></select></label><label>Plan de interés<select id="lP"><option>Básico</option><option>Pro</option><option>Élite</option></select></label><button class="btn g" onclick="lead()">Quiero mi semana gratis</button></div></div></div></section>
@@ -123,10 +123,10 @@ dialog{background:var(--p);color:var(--tx);border:1px solid var(--ln);border-rad
 
 <script>
 /* ===== CONFIGURA AQUÍ (cambia estos 2 datos por los tuyos) ===== */
-const CORREO='tucorreo@gmail.com'; /* Gmail donde llegan los mensajes */
-const WA='51900000000'; /* tu WhatsApp: 51 + 9 dígitos, sin + ni espacios */
+const CORREO='gymevolutionadmin@gmail.com'; /* Gmail donde llegan los mensajes */
+const WA='51926965029'; /* tu WhatsApp: 51 + 9 dígitos, sin + ni espacios */
 const SEED=true; /* true: muestra 3 reseñas de ejemplo; pon false cuando lances la web real */
-const DEMO=true; /* true: los recordatorios de cobranza se abren hacia TU número, no hacia números ficticios */
+const DEMO=false; /* true: los recordatorios de cobranza se abren hacia TU número, no hacia números ficticios */
 const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
 const $=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 async function mail(asunto,datos){try{const r=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(AE),{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:asunto,_captcha:'false',_template:'table',_honey:'',...datos})});return r.ok}catch{return false}}
