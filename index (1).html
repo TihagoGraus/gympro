@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GymPro Evolution · Gimnasio en Lima y Trujillo</title>
+<meta name="description" content="GymPro Evolution: gimnasio con 5 sedes en Lima y Trujillo. Planes sin matrícula, clases grupales y semana de prueba gratis.">
+<meta name="theme-color" content="#0d1217">
+<meta property="og:title" content="GymPro Evolution · Entrena fuerte. Reserva en segundos.">
+<meta property="og:description" content="5 sedes en Lima y Trujillo. Prueba 7 días gratis.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏋️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1217;--p:#151c24;--p2:#1c252f;--ln:#27323d;--tx:#e9eef3;--mt:#8b98a5;--n:#39ff14;--w:#ffc233;--b:#ff5a4d;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:inherit;margin:0}html{height:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font:400 16px/1.5 Barlow,system-ui,sans-serif;min-height:100%}
+h1,h2,h3,.f{font-family:'Barlow Condensed',Impact,sans-serif;font-weight:800;line-height:1;letter-spacing:.01em}
+h1{font-size:clamp(46px,8vw,92px)}h2{font-size:clamp(32px,4.5vw,48px);margin-bottom:8px}h3{font-size:24px}
+.w{max-width:1160px;margin:0 auto;padding:0 20px}section.s{padding:64px 0;scroll-margin-top:80px}
+header{position:sticky;top:0;z-index:20;background:rgba(13,18,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.logo{font:800 28px 'Barlow Condensed';cursor:pointer;white-space:nowrap;background:none;border:0;color:var(--tx);padding:0}.logo b{color:var(--n)}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav button{background:none;border:0;color:var(--mt);font:600 15px Barlow;padding:8px 12px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap}
+nav button.on{color:var(--tx);border-color:var(--n)}nav button:hover{color:var(--tx)}
+.v{display:none}.v.on{display:block}
+.btn{border:1px solid var(--ln);background:var(--p2);color:var(--tx);font:600 15px Barlow;padding:11px 18px;border-radius:8px;cursor:pointer}
+.btn:hover{border-color:var(--mt)}.btn.g{background:var(--n);color:#06210a;border-color:var(--n)}.btn.g:hover{filter:brightness(.92)}
+.btn.sm{padding:5px 10px;font-size:13px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--n);outline-offset:2px}
+.card{background:var(--p);border:1px solid var(--ln);border-radius:12px;padding:22px}
+.mt{color:var(--mt)}.g2{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.hero{display:grid;gap:40px;grid-template-columns:1.3fr 1fr;align-items:center;padding:56px 0}
+.hero p{max-width:46ch;margin:18px 0 26px;font-size:18px;color:var(--mt)}.hero em{font-style:normal;color:var(--n)}
+.ring{position:relative;width:170px;height:170px;margin:12px auto}.ring svg{transform:rotate(-90deg)}
+.ring div{position:absolute;inset:0;display:grid;place-content:center;text-align:center}.ring b{font:800 44px 'Barlow Condensed'}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0}.tabs button{background:var(--p);border:1px solid var(--ln);color:var(--mt);border-radius:99px;padding:6px 14px;cursor:pointer;font:600 14px Barlow}
+.tabs button.on{background:var(--n);color:#06210a;border-color:var(--n)}
+.plan.pop{border-color:var(--n)}.plan .pr{font:800 52px 'Barlow Condensed'}.plan ul{list-style:none;padding:0;margin:14px 0 20px;display:grid;gap:8px;color:var(--mt)}
+.plan li:before{content:"✓ ";color:var(--n)}
+.row{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--ln)}.row:first-child{border:0}
+.row .t{font:700 24px 'Barlow Condensed';width:64px}.row>div{flex:1}
+.av{width:42px;height:42px;border-radius:50%;background:var(--p2);border:1px solid var(--ln);display:grid;place-items:center;font:700 16px 'Barlow Condensed';color:var(--n);flex:none}
+input,select,textarea{background:var(--bg);border:1px solid var(--ln);color:var(--tx);border-radius:8px;padding:10px 12px;font:400 15px Barlow;width:100%}
+label{font-size:13px;color:var(--mt);display:grid;gap:4px}.fm{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));align-items:end}
+.chip{font-size:12px;font-weight:600;padding:2px 10px;border-radius:99px;border:1px solid;white-space:nowrap}
+.Activo{color:var(--n);background:#39ff1418}.Por-vencer{color:var(--w);background:#ffc23318}.Vencido{color:var(--b);background:#ff5a4d18}.Congelado{color:#6cb6ff;background:#6cb6ff18}
+.kpi b{display:block;font:800 40px/1.1 'Barlow Condensed'}.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:1100px}th{text-align:left;font-size:13px;color:var(--mt);font-weight:600;padding:10px 12px;background:var(--p2)}
+td{padding:10px 12px;border-top:1px solid var(--ln);font-size:14px}.mem{display:flex;gap:10px;align-items:center}
+.pg{display:flex;justify-content:space-between;align-items:center;margin-top:14px;flex-wrap:wrap;gap:8px}
+dialog{background:var(--p);color:var(--tx);border:1px solid var(--ln);border-radius:12px;padding:24px;width:min(440px,92vw);margin:auto}dialog::backdrop{background:#000a}
+#toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--n);color:#06210a;font-weight:600;padding:10px 18px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:50;max-width:90vw}
+#toast.on{opacity:1}footer{border-top:1px solid var(--ln);padding:30px 0;color:var(--mt);font-size:14px}
+.wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#04230f;font-weight:700;border-radius:99px;padding:12px 18px;text-decoration:none;z-index:15}
+.qr{display:grid;grid-template-columns:repeat(15,1fr);gap:1px;width:150px;background:#fff;padding:8px;border-radius:8px}.qr i{aspect-ratio:1}.qr i.k{background:#000}
+.bar{height:8px;background:var(--ln);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--n)}.st{color:var(--w)}textarea{resize:vertical;min-height:80px}
+.Cambio-pendiente{color:var(--w);background:#ffc23318}.Sin-acceso{color:var(--mt);background:#8b98a518}code{background:var(--p2);padding:1px 6px;border-radius:5px}
+@media(max-width:820px){.hero{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header><div class="w nav"><button class="logo" onclick="go('inicio')" aria-label="Ir al inicio">GYMPRO<b>EVOLUTION</b></button>
+<nav id="nav"></nav></div></header>
+
+<main>
+<!-- INICIO -->
+<div class="v on" id="v-inicio">
+<div class="w hero"><div><h1>Entrena fuerte.<br><em>Reserva en segundos.</em></h1>
+<p>Cinco sedes en Lima y Trujillo, <span id="nCl">30</span> clases por semana y entrenadores que te conocen por tu nombre. Tu primera semana es gratis.</p>
+<button class="btn g" onclick="irA('prueba')">Probar 7 días gratis</button> <button class="btn" onclick="irA('clases')">Ver clases</button></div>
+<div class="card"><h3>Aforo en vivo</h3><div class="tabs" id="afTabs"></div>
+<div class="ring"><svg width="170" height="170"><circle cx="85" cy="85" r="74" fill="none" stroke="#27323d" stroke-width="12"/><circle id="afC" cx="85" cy="85" r="74" fill="none" stroke="#39ff14" stroke-width="12" stroke-linecap="round" stroke-dasharray="465" stroke-dashoffset="465" style="transition:stroke-dashoffset .8s"/></svg><div><b id="afN">0</b><span class="mt" id="afT"></span></div></div>
+<p class="mt" id="afM" style="text-align:center"></p></div></div>
+
+<section class="s" id="planes"><div class="w"><div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px"><div><h2>Planes sin letra chica</h2><p class="mt">Sin costo de matrícula. Paga con Yape, Plin o tarjeta.</p></div>
+<div class="tabs" id="billT"><button class="on" data-b="1">Mensual</button><button data-b="0.8">Anual −20%</button></div></div>
+<div class="g2" id="plans" style="margin-top:20px"></div></div></section>
+
+<section class="s" id="clases" style="background:var(--p)"><div class="w"><h2>Clases grupales</h2><p class="mt">Reserva tu cupo y aparece en tu Portal del Atleta.</p><div class="tabs" id="dayT"></div><div class="card" id="clsL"></div></div></section>
+
+<section class="s"><div class="w"><h2>Tu equipo de entrenadores</h2><div class="g2" id="coaches" style="margin-top:20px"></div></div></section>
+
+<section class="s" style="background:var(--p)" id="resenas"><div class="w"><h2>Lo que dicen los registrados</h2><p class="mt" id="rvAvg"></p><div class="g2" id="rvL" style="margin:20px 0"></div>
+<div class="card" id="rvF" style="background:var(--bg)"></div></div></section>
+<section class="s"><div class="w"><div class="card"><h2>Dinos qué opinas</h2><p class="mt" style="margin-bottom:16px">Escríbele al equipo de GymPro: sugerencias, quejas o ideas.</p><div class="fm" style="grid-template-columns:1fr"><label>Tu correo<input id="oE" type="email" placeholder="tu@gmail.com"></label><label>Mensaje<textarea id="oM" maxlength="500"></textarea></label><div><button class="btn g" onclick="opina()">Enviar al equipo</button></div></div></div></div></section>
+
+<section class="s" id="prueba"><div class="w"><div class="card"><h2>Reserva tu semana de prueba</h2><p class="mt" style="margin-bottom:16px">Te escribimos por WhatsApp en menos de una hora.</p>
+<div class="fm"><label>Nombre<input id="lN"></label><label>WhatsApp<input id="lT" inputmode="tel" placeholder="9XX XXX XXX"></label><label>Sede<select id="lS"></select></label><label>Plan de interés<select id="lP"><option>Básico</option><option>Pro</option><option>Élite</option></select></label><button class="btn g" onclick="lead()">Quiero mi semana gratis</button></div></div></div></section>
+</div>
+
+<div class="v" id="v-login"><div class="w" style="max-width:480px;padding:60px 20px"><div class="card"><h2>Ingresar</h2><p class="mt" style="margin-bottom:16px">Usa el usuario que te dio recepción.</p><div class="fm" style="grid-template-columns:1fr"><label>Usuario<input id="lu" autocomplete="username"></label><label>Contraseña<input id="lp" type="password" autocomplete="current-password"></label><button class="btn g" onclick="login()">Ingresar</button></div></div>
+<div class="card" id="demoAcc" style="margin-top:14px;font-size:14px"><b>Cuentas de prueba (solo en esta maqueta)</b><p class="mt" style="margin-top:6px">Administrador: <code>admin</code> / <code>Admin2026!</code><br>Registrada con antigüedad: <code>rosa.quispe</code> / <code>Gym2026!</code><br>Para probar el primer ingreso: entra como admin, registra a alguien con su clave temporal, cierra sesión e ingresa con ese usuario.</p></div></div></div>
+<div class="v" id="v-pw"><div class="w" style="max-width:480px;padding:60px 20px"><div class="card"><h2>Crea tu contraseña</h2><p class="mt" style="margin:8px 0 16px">Cambia la clave por una tuya: mínimo 8 caracteres, con letras y números.</p><div class="fm" style="grid-template-columns:1fr"><label>Nueva contraseña<input id="pn" type="password" autocomplete="new-password"></label><label>Repítela<input id="pr" type="password" autocomplete="new-password"></label><button class="btn g" onclick="chgPw()">Guardar contraseña</button><button class="btn" id="pwC" onclick="go('portal')">Cancelar</button></div></div></div></div>
+<div class="v" id="v-welcome"><div class="w" style="max-width:640px;padding:50px 20px"><div class="card" id="welB"></div></div></div>
+<!-- PORTAL -->
+<div class="v" id="v-portal"><div class="w" style="padding-top:40px;padding-bottom:60px">
+<h2>Portal del Atleta</h2><div id="pOnb" style="margin-top:14px"></div>
+<div class="g2"><div class="card" id="pCard"></div><div class="card" id="pProg"></div><div class="card"><h3>Mis reservas</h3><div id="pRes" style="margin-top:8px"></div></div>
+<div class="card"><h3>Calculadora IMC y calorías</h3><div class="fm" style="margin:12px 0"><label>Peso (kg)<input id="cW" type="number" value="70"></label><label>Talla (cm)<input id="cH" type="number" value="170"></label><label>Edad<input id="cA" type="number" value="28"></label>
+<label>Sexo<select id="cS"><option value="5">Hombre</option><option value="-161">Mujer</option></select></label><label>Actividad<select id="cV"><option value="1.2">Poca</option><option value="1.375">Ligera</option><option value="1.55" selected>Moderada</option><option value="1.725">Alta</option></select></label><label>Objetivo<select id="cG"><option value="-400">Bajar grasa</option><option value="0">Mantener</option><option value="300">Ganar músculo</option></select></label></div><button class="btn g" onclick="calc()">Calcular</button><p id="cR" class="mt" style="margin-top:12px"></p></div></div></div></div>
+
+<!-- ADMIN -->
+<div class="v" id="v-admin"><div class="w" style="padding-top:40px;padding-bottom:60px">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><div><h2>Panel de gestión</h2><p class="mt">Registrados, cobranza y asistencia.</p></div><div><button class="btn" onclick="resetDemo()">Restablecer datos de ejemplo</button> <button class="btn" onclick="csv()">Exportar CSV</button> <button class="btn g" onclick="openM()">+ Nuevo registrado</button></div></div>
+<div class="g2" style="margin:20px 0" id="kpis"></div>
+<div class="g2" style="grid-template-columns:2fr 1fr"><div class="card"><h3>Ingresos por membresía (S/, estimado)</h3><div id="chart"></div></div>
+<div class="card"><h3>Cobranza</h3><p class="mt" style="margin:8px 0 14px" id="cobM"></p><button class="btn g" onclick="remindAll()">Ver quién debe recordatorio</button><p class="mt" style="margin-top:14px;font-size:13px">Cada botón WhatsApp de la tabla abre un mensaje listo con el monto. WhatsApp no permite envíos masivos automáticos.</p></div></div>
+<div class="card" style="margin-top:16px"><div class="fm" style="margin-bottom:14px"><label>Buscar<input id="q" placeholder="Nombre, DNI o usuario"></label><label>Región<select id="fr"><option value="">Todas</option><option>Lima</option><option>La Libertad</option></select></label><label>Sede<select id="fs"></select></label><label>Plan<select id="fp"><option value="">Todos</option><option>Básico</option><option>Pro</option><option>Élite</option></select></label><label>Estado<select id="fe"><option value="">Todos</option><option>Activo</option><option>Por vencer</option><option>Vencido</option><option>Congelado</option></select></label><label>Objetivo<select id="fo"></select></label><label>Acceso<select id="fa"><option value="">Todos</option><option>Activo</option><option>Cambio pendiente</option><option>Sin acceso</option></select></label><label>Edad<select id="fg"><option value="">Todas</option><option value="0">Hasta 25</option><option value="1">26 a 40</option><option value="2">41 o más</option></select></label><label>Antigüedad<select id="fn"><option value="">Cualquiera</option><option value="0">Menos de 3 meses</option><option value="1">3 a 12 meses</option><option value="2">Más de 12 meses</option></select></label><button class="btn" onclick="clr()">Limpiar filtros</button></div>
+<div class="tw"><table><thead><tr><th>Registrado</th><th>DNI</th><th>Plan</th><th>Región · Sede</th><th>Vence</th><th>Estado</th><th>Acceso</th><th>Acciones</th></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="pg"><span class="mt" id="pgI"></span><div><button class="btn sm" onclick="pg(-1)">Anterior</button> <button class="btn sm" onclick="pg(1)">Siguiente</button></div></div></div>
+<div class="card" style="margin-top:16px"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><div><h3>Horario de clases</h3><p class="mt">Los cambios se ven al instante en el Inicio.</p></div><button class="btn g" onclick="openC()">+ Nueva clase</button></div><div class="tabs" id="adT"></div><div id="adL"></div></div>
+<div class="g2" style="margin-top:16px;grid-template-columns:1fr 2fr"><div class="card"><h3>Correo de recepción</h3><p class="mt" style="margin:8px 0 12px" id="aEm"></p><button class="btn" onclick="testE()">Enviar prueba</button><p class="mt" style="margin-top:10px;font-size:13px">Para cambiar el correo, edita <code>CORREO</code> al inicio del script en index.html.</p></div><div class="card"><h3>Mensajes enviados desde este navegador</h3><p class="mt" style="font-size:13px;margin-top:4px">Los mensajes reales de tus visitantes llegan a tu correo. Aquí solo aparecen los enviados desde este dispositivo.</p><div id="inb" style="margin-top:8px"></div><div id="ldL"></div></div></div></div></div>
+</main>
+
+<footer><div class="w">GymPro Evolution · Maqueta de propuesta con datos simulados · Lima y Trujillo, Perú</div></footer>
+<a class="wa" href="https://wa.me/51900000000?text=Hola%20GymPro" target="_blank" rel="noopener">WhatsApp</a>
+<div id="toast"></div>
+
+<dialog id="dlg"><h3 id="dT"></h3><div class="fm" style="grid-template-columns:1fr 1fr;margin:16px 0"><label style="grid-column:1/-1">Nombre completo<input id="mN" oninput="sugU()"></label><label>DNI<input id="mD" maxlength="8" inputmode="numeric"></label><label>Edad<input id="mA" type="number" min="14" max="90"></label><label>Celular<input id="mC" inputmode="tel" maxlength="9" placeholder="9XXXXXXXX"></label><label>Usuario<input id="mU" maxlength="24"></label><label>Sede<select id="mS"></select></label><label>Plan<select id="mP"><option>Básico</option><option>Pro</option><option>Élite</option></select></label><label>Estado<select id="mE"><option>Activo</option><option>Congelado</option></select></label><label id="mTL" style="grid-column:1/-1">Clave temporal<span style="display:flex;gap:6px"><input id="mT"><button type="button" class="btn sm" onclick="$('#mT').value=tmp()">Generar</button></span><small class="mt">La persona deberá cambiarla en su primer ingreso.</small></label></div><div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" onclick="dlg.close()">Cancelar</button><button class="btn g" onclick="saveM()">Guardar</button></div></dialog>
+<dialog id="dlR"><h3>Clave temporal</h3><p class="mt" id="rpT" style="margin:12px 0 18px"></p><div style="text-align:right"><button class="btn g" onclick="dlR.close()">Listo</button></div></dialog>
+<dialog id="dC"><h3 id="cT"></h3><div class="fm" style="grid-template-columns:1fr;margin:16px 0"><label>Día<select id="cD"></select></label><label>Hora<input id="cH2" type="time"></label><label>Clase<input id="cN" maxlength="30"></label><label>Entrenador<select id="cC"></select></label><label>Cupos totales<input id="cK" type="number" min="1" max="60"></label></div><div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" onclick="dC.close()">Cancelar</button><button class="btn g" onclick="saveC()">Guardar clase</button></div></dialog>
+<dialog id="dlD"><h3>Eliminar registrado</h3><p class="mt" id="dTx" style="margin:12px 0 18px"></p><div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn" onclick="dlD.close()">Cancelar</button><button class="btn" style="color:var(--b)" onclick="delOk()">Eliminar</button></div></dialog>
+
+<script>
+/* ===== CONFIGURA AQUÍ (cambia estos 2 datos por los tuyos) ===== */
+const CORREO='tucorreo@gmail.com'; /* Gmail donde llegan los mensajes */
+const WA='51900000000'; /* tu WhatsApp: 51 + 9 dígitos, sin + ni espacios */
+const SEED=true; /* true: muestra 3 reseñas de ejemplo; pon false cuando lances la web real */
+const DEMO=true; /* true: los recordatorios de cobranza se abren hacia TU número, no hacia números ficticios */
+const ld=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
+const $=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function mail(asunto,datos){try{const r=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(AE),{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:asunto,_captcha:'false',_template:'table',_honey:'',...datos})});return r.ok}catch{return false}}
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2600)};
+let sd=11;const R=()=>(sd=sd*16807%2147483647)/2147483647,P=a=>a[Math.floor(R()*a.length)];
+const PR={Básico:99,Pro:169,Élite:299},SEDES=[['Miraflores',180],['San Isidro',150],['Surco',120],['Trujillo Centro',140],['Víctor Larco',110]];
+const FN=['Luis','Carlos','Jorge','Miguel','Diego','Renzo','Alexis','Fabricio','Sandro','Piero','José','Víctor','Rosa','Lucía','Milagros','Camila','Yesenia','Flor','Gianella','Mariela','Karina','Ana','Daniela','Jhoselyn','Valeria','Rocío','Brenda','Nicole'];
+const LN=['Quispe','Huamán','Flores','Rojas','Chávez','Mamani','Vásquez','Torres','Ramírez','Castillo','Díaz','Gutiérrez','Condori','Paredes','Salazar','Ríos','Cárdenas','Villanueva','Mendoza','Espinoza','Delgado','Cruz','Herrera','Ortiz','Valdivia','Zevallos','Bustamante','Palomino','Loayza','Tapia'];
+const D=864e5,today=new Date();today.setHours(0,0,0,0);
+const st=o=>o<0?'Vencido':o<=7?'Por vencer':'Activo';
+const OB=['Bajar grasa','Ganar músculo','Resistencia','Salud general','Competencia'],pr=()=>{const g=2+Math.floor(R()*5);return{goal:g,wk:Math.floor(R()*(g+1)),mo:8+Math.floor(R()*22),cls:Math.floor(R()*90),hrs:Math.round(20+R()*180),streak:Math.floor(R()*30),obj:P(OB),age:16+Math.floor(R()*45),mes:1+Math.floor(R()*36)}};
+let M=[];for(let i=0;i<80;i++){const o=Math.round(R()*100-35),n=P(FN)+' '+P(LN)+' '+P(LN),r=R();
+M.push({id:i+1,name:n,dni:String(10000000+Math.floor(R()*89999999)),plan:r<.5?'Básico':r<.83?'Pro':'Élite',sede:P(SEDES)[0],vence:+today+o*D,status:R()<.05?'Congelado':st(o),...pr()})}
+let nid=131;
+const fd=t=>new Date(t).toLocaleDateString('es-PE',{day:'2-digit',month:'short',year:'numeric'}),ini=n=>n.split(' ').slice(0,2).map(x=>x[0]).join(''),cls=s=>s.replace(' ','-');
+
+/* navegación */
+function go(v,np){const r=sess?.role;if(v=='admin'&&r!='admin'||(v=='portal'||v=='welcome')&&r!='cliente'||v=='pw'&&!pend)v='login';if(!np&&location.hash!='#'+v)history.pushState(null,'','#'+v);document.querySelectorAll('.v').forEach(x=>x.classList.toggle('on',x.id=='v-'+v));document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.v==v));scrollTo(0,0);if(v=='admin')adm();if(v=='portal')portal();if(v=='welcome')wel();if(v=='pw')$('#pwC').style.display=sess?'':'none'}
+
+/* aforo */
+let sede=0,occ=SEDES.map(s=>Math.round(s[1]*(.35+R()*.3)));
+function af(){const [n,c]=SEDES[sede],p=occ[sede]/c;$('#afN').textContent=occ[sede];$('#afT').textContent='de '+c+' personas';$('#afC').style.strokeDashoffset=465*(1-p);
+$('#afM').textContent=p<.5?'Tranquilo ahora: buen momento para venir.':p<.8?'Movimiento normal.':'Lleno: mejor reserva una clase.';
+$('#afTabs').innerHTML=SEDES.map((s,i)=>`<button class="${i==sede?'on':''}" onclick="sede=${i};af()">${s[0]}</button>`).join('')}
+setInterval(()=>{occ=occ.map((o,i)=>Math.max(10,Math.min(SEDES[i][1],o+Math.round(R()*8-4))));af();if($('#v-admin.on'))kp()},4000);af();
+
+/* planes */
+const FT={Básico:['Acceso a sala de pesas y cardio','Locker diario','App con rutinas'],Pro:['Todo del Básico','Clases grupales ilimitadas','Evaluación corporal mensual'],Élite:['Todo del Pro','Entrenador personal 2 veces al mes','Acceso a las 5 sedes y toalla']};let bill=1;
+function plans(){$('#plans').innerHTML=Object.keys(PR).map(k=>`<div class="card plan ${k=='Pro'?'pop':''}"><h3>${k}${k=='Pro'?' · Más elegido':''}</h3><div class="pr">S/ ${Math.round(PR[k]*bill)}<span class="mt" style="font:400 16px Barlow"> /mes</span></div>${bill<1?`<p class="mt" style="font-size:13px">Pagas S/ ${Math.round(PR[k]*bill*12)} al año</p>`:''}<ul>${FT[k].map(f=>'<li>'+f+'</li>').join('')}</ul><button class="btn ${k=='Pro'?'g':''}" style="width:100%" onclick="irA('prueba','${k}')">Elegir ${k}</button></div>`).join('')}
+$('#billT').onclick=ev=>{if(!ev.target.dataset.b)return;bill=+ev.target.dataset.b;document.querySelectorAll('#billT button').forEach(b=>b.classList.toggle('on',b==ev.target));plans()};plans();
+$('#lS').innerHTML=SEDES.map(s=>`<option>${s[0]}</option>`).join('');
+$('#coaches').innerHTML=[['Andrea Salas','Fuerza y recomposición'],['Marco Villar','CrossFit y funcional'],['Kiara Montoya','Yoga y movilidad'],['Elías Ccori','Box y cardio']].map(c=>`<div class="card" style="display:flex;gap:14px;align-items:center"><div class="av">${ini(c[0])}</div><div><b>${c[0]}</b><div class="mt">${c[1]}</div></div></div>`).join('');
+
+/* clases */
+const DAYS=['Lun','Mar','Mié','Jue','Vie','Sáb'],CN=['Spinning','CrossFit','Yoga','Zumba','Funcional','Box','GAP','Pilates'],CT=['06:00','07:30','12:30','18:00','19:30','20:30'],CC=['Andrea Salas','Marco Villar','Kiara Montoya','Elías Ccori'];
+let C=[];DAYS.forEach((d,di)=>CT.forEach(t=>{if(R()<.8)C.push({id:C.length,d:di,t,n:P(CN),c:P(CC),cap:20,free:Math.floor(R()*9)})}));
+let day=new Date().getDay()-1;if(day<0||day>5)day=0;let RES=new Set();const gc=i=>C.find(x=>x.id==i);let cid=C.length;
+function clases(){$('#nCl').textContent=C.length;$('#dayT').innerHTML=DAYS.map((d,i)=>`<button class="${i==day?'on':''}" onclick="day=${i};clases()">${d}</button>`).join('');
+$('#clsL').innerHTML=C.filter(x=>x.d==day).sort((a,b)=>a.t.localeCompare(b.t)).map(x=>`<div class="row"><span class="t">${x.t}</span><div><b>${e(x.n)}</b><div class="mt">${e(x.c)} · ${x.free?x.free+' cupos':'Sin cupos'}</div></div><button class="btn sm ${RES.has(x.id)?'':'g'}" ${!x.free&&!RES.has(x.id)?'disabled':''} onclick="reserve(${x.id})">${RES.has(x.id)?'Cancelar':'Reservar'}</button></div>`).join('')}
+function reserve(i){if(sess?.role!='cliente'){toast(sess?'Reserva desde una cuenta de registrado':'Ingresa para reservar tus clases');if(!sess)go('login');return}const x=gc(i);if(RES.has(i)){RES.delete(i);x.free++;toast('Reserva cancelada')}else{if(['Vencido','Congelado'].includes(cur().status))return toast('Tu membresía está '+cur().status.toLowerCase()+': renueva en recepción para reservar');RES.add(i);x.free--;if(cur().onb)cur().onb.t.clase=1;toast('Reservado: '+x.n+' '+DAYS[x.d]+' '+x.t)}clases();if($('#v-welcome.on'))wel();if($('#v-portal.on'))portal()}clases();
+function lead(){if(Date.now()-(lead.l||0)<30000)return toast('Ya enviaste tus datos, espera unos segundos');const n=$('#lN').value.trim(),t=$('#lT').value.replace(/\s/g,'');if(!n||!/^9\d{8}$/.test(t))return toast('Ingresa tu nombre y un WhatsApp de 9 dígitos que empiece con 9');lead.l=Date.now();const x={n,t,s:$('#lS').value,p:$('#lP').value,d:Date.now()};LD.unshift(x);sv('gp_ld',LD);leads++;mail('GymPro · Nuevo interesado',{nombre:n,whatsapp:t,sede:x.s,plan:x.p});toast('Listo, '+n+'. Te escribimos pronto.');$('#lN').value=$('#lT').value=''}
+let LD=ld('gp_ld',[]),leads=LD.length;
+function irA(id,p){go('inicio');if(p)$('#lP').value=p;setTimeout(()=>document.getElementById(id).scrollIntoView({behavior:'smooth'}),40)}
+function leadsView(){$('#ldL').innerHTML=LD.length?'<h3 style="margin-top:18px">Interesados (semana de prueba)</h3>'+LD.map(x=>`<div class="row"><div><b>${e(x.n)}</b> <span class="mt">${fd(x.d)}</span><p class="mt">${e(x.s)} · plan ${e(x.p)} · ${e(x.t)}</p></div><a href="https://wa.me/51${e(x.t)}" target="_blank" rel="noopener"><button class="btn sm">WhatsApp</button></a></div>`).join(''):''}
+
+/* portal */
+
+function portal(){const m=cur(),k=[...Array(225)].map((_,i)=>{const r=i%15,c=Math.floor(i/15),f=(r<4&&c<4)||(r>10&&c<4)||(r<4&&c>10);return `<i class="${f||((+m.dni[i%8]*7+i*13+m.id)%3==0)?'k':''}"></i>`}).join('');
+$('#pCard').innerHTML=`<div class="mem" style="margin-bottom:14px"><div class="av">${ini(m.name)}</div><div><h3>${e(m.name)}</h3><span class="mt">DNI ${m.dni} · Sede ${m.sede} · Usuario ${m.user}</span></div></div><p>Plan <b>${m.plan}</b> · vence ${fd(m.vence)} <span class="chip ${cls(m.status)}">${m.status}</span></p><div style="display:flex;gap:16px;align-items:center;margin-top:16px;flex-wrap:wrap"><div class="qr">${k}</div><div><p class="mt" style="margin-bottom:10px">Muestra este código en recepción.</p><button class="btn g" onclick="checkin(${m.id})">Marcar asistencia</button> <button class="btn" onclick="pend=cur();go('pw')">Cambiar contraseña</button></div></div>`;
+$('#pRes').innerHTML=RES.size?[...RES].map(gc).map(x=>`<div class="row"><span class="t">${x.t}</span><div><b>${e(x.n)}</b><div class="mt">${DAYS[x.d]} · ${e(x.c)}</div></div>${x.d==(new Date().getDay()+6)%7&&m.last==+today?`<button class="btn sm g" onclick="done(${x.id})">Completada</button>`:'<span class="mt" style="font-size:12px;max-width:120px">Disponible el día de la clase, con asistencia marcada</span>'}</div>`).join(''):'<p class="mt">Aún no reservas clases. Ve a Inicio → Clases grupales.</p>';prog(m);onbR(m)}
+function checkin(i){const m=M.find(x=>x.id==i);if(m.status=='Vencido'||m.status=='Congelado')return toast('Membresía '+m.status.toLowerCase()+': renueva en recepción para ingresar');if(m.last==+today)return toast('Ya marcaste asistencia hoy');m.last=+today;if(m.onb)m.onb.t.asist=1;m.wk++;m.mo++;m.hrs++;m.streak++;att++;occ[sede]++;portal();toast('Bienvenido, '+m.name.split(' ')[0]+'. ¡Buen entrenamiento!')}let att=64;
+function calc(){const w=+$('#cW').value,h=+$('#cH').value,a=+$('#cA').value;if(!w||!h||!a)return toast('Completa peso, talla y edad');const i=w/((h/100)**2),tdee=(10*w+6.25*h-5*a+ +$('#cS').value)*+$('#cV').value;$('#cR').innerHTML=`IMC <b>${i.toFixed(1)}</b> (${i<18.5?'bajo peso':i<25?'normal':i<30?'sobrepeso':'obesidad'}) · Calorías sugeridas <b>${Math.round(tdee+ +$('#cG').value)} kcal/día</b> (estimado)`}
+
+/* admin */
+let F=[],page=0,del=null,edit=null;const PS=10;
+function kp(){const a=M.filter(m=>m.status=='Activo'||m.status=='Por vencer'),inc=a.reduce((s,m)=>s+PR[m.plan],0),pv=M.filter(m=>m.status=='Por vencer').length;
+$('#kpis').innerHTML=[['Registrados activos',a.length],['Ingresos del mes','S/ '+inc.toLocaleString('es-PE')],['Asistencia hoy',att],['Interesados (este navegador)',leads]].map(k=>`<div class="card kpi"><span class="mt">${k[0]}</span><b>${k[1]}</b></div>`).join('')+`<div class="card kpi"><span class="mt">Aforo ahora (${SEDES[sede][0]})</span><b>${occ[sede]}/${SEDES[sede][1]}</b></div>`;
+$('#cobM').textContent=pv+' registrados vencen en los próximos 7 días y '+M.filter(m=>m.status=='Vencido').length+' ya vencieron.';
+const MN=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'],mo=[0,1,2,3,4,5].map(i=>MN[(today.getMonth()-5+i+12)%12]),f=[.78,.83,.88,.92,.96,1],mx=inc;$('#chart').innerHTML=`<svg viewBox="0 0 420 190" width="100%">${f.map((x,i)=>{const h=x*130;return `<rect x="${i*68+14}" y="${150-h}" width="44" height="${h}" rx="5" fill="${i==5?'#39ff14':'#2c3a46'}"/><text x="${i*68+36}" y="170" text-anchor="middle" fill="#8b98a5" font-size="13">${mo[i]}</text><text x="${i*68+36}" y="${144-h}" text-anchor="middle" fill="#e9eef3" font-size="12">${Math.round(mx*x/1000)}k</text>`}).join('')}</svg>`}
+function refresh(){M.forEach(m=>{if(m.status!='Congelado')m.status=st(Math.round((m.vence-today)/D))})}
+function pay(i){const m=M.find(x=>x.id==i);m.vence=Math.max(+today,m.vence)+30*D;toast('Pago de S/ '+PR[m.plan]+' registrado: '+m.name.split(' ')[0]+' vence el '+fd(m.vence));adm()}
+function adm(){refresh();kp();tbl();ahor();inbox()}
+function tbl(){const q=$('#q').value.toLowerCase(),v=i=>$('#'+i).value,ag=a=>a<=25?'0':a<=40?'1':'2',tn=t=>t<3?'0':t<=12?'1':'2';
+F=M.filter(m=>(!q||m.name.toLowerCase().includes(q)||m.dni.includes(q)||m.user.includes(q))&&(!v('fr')||SR[m.sede]==v('fr'))&&(!v('fs')||m.sede==v('fs'))&&(!v('fp')||m.plan==v('fp'))&&(!v('fe')||m.status==v('fe'))&&(!v('fo')||m.obj==v('fo'))&&(!v('fa')||acc(m)==v('fa'))&&(!v('fg')||ag(m.age)==v('fg'))&&(!v('fn')||tn(m.mes)==v('fn')));
+const mp=Math.max(0,Math.ceil(F.length/PS)-1);page=Math.min(page,mp);
+$('#tb').innerHTML=F.slice(page*PS,page*PS+PS).map(m=>`<tr><td><div class="mem"><div class="av">${ini(m.name)}</div><div><b>${e(m.name)}</b><div class="mt" style="font-size:12px">${e(m.user)} · ${m.age} años</div></div></div></td><td>${m.dni}</td><td style="color:${m.plan=='Élite'?'var(--w)':m.plan=='Pro'?'var(--n)':'inherit'}"><b>${m.plan}</b></td><td>${SR[m.sede]} · ${m.sede}</td><td>${fd(m.vence)}</td><td><span class="chip ${cls(m.status)}">${m.status}</span></td><td><span class="chip ${cls(acc(m))}">${acc(m)}</span></td><td style="white-space:nowrap"><button class="btn sm" onclick="openM(${m.id})">Editar</button> <button class="btn sm" onclick="resetPw(${m.id})">${m.hash?'Restablecer clave':'Crear acceso'}</button> ${m.status=='Por vencer'||m.status=='Vencido'?`<button class="btn sm g" onclick="pay(${m.id})">Registrar pago</button> <button class="btn sm" onclick="remind(${m.id})">WhatsApp</button> `:''}<button class="btn sm" onclick="askDel(${m.id})">Eliminar</button></td></tr>`).join('')||'<tr><td colspan="8" class="mt">Ningún registrado coincide con esos filtros.</td></tr>';
+$('#pgI').textContent=F.length+' registrados · página '+(page+1)+' de '+(mp+1)}
+['q','fr','fs','fp','fe','fo','fa','fg','fn'].forEach(i=>$('#'+i).oninput=()=>{page=0;tbl()});function pg(d){page=Math.max(0,page+d);tbl()}
+function openM(id){edit=id||null;const m=edit?M.find(x=>x.id==edit):{name:'',dni:'',tel:'',age:30,user:'',sede:SEDES[0][0],plan:'Básico',status:'Activo'};$('#dT').textContent=edit?'Editar registrado':'Registrar nuevo miembro';$('#mS').innerHTML=SEDES.map(s=>`<option>${s[0]}</option>`).join('');$('#mN').value=m.name;$('#mD').value=m.dni;$('#mA').value=m.age;$('#mC').value=m.tel||'';$('#mU').value=m.user;$('#mS').value=m.sede;$('#mP').value=m.plan;$('#mE').value=m.status=='Congelado'?'Congelado':'Activo';$('#mT').value=edit?'':tmp();$('#mTL').style.display=edit?'none':'';dlg.showModal()}
+async function saveM(){const n=$('#mN').value.trim(),d=$('#mD').value.trim(),u=norm($('#mU').value),t=$('#mT').value,a=+$('#mA').value,c=$('#mC').value.replace(/\s/g,'');if(!n||!/^\d{8}$/.test(d))return toast('Ingresa nombre y un DNI de 8 dígitos');if(!/^[a-z0-9.]{3,24}$/.test(u))return toast('Usuario: 3 a 24 caracteres, minúsculas, números o punto');if(M.some(x=>x.user==u&&x.id!=edit)||u=='admin')return toast('Ese usuario ya existe');if(!(a>=14&&a<=90))return toast('La edad debe estar entre 14 y 90');if(!/^9\d{8}$/.test(c))return toast('Celular de 9 dígitos que empiece con 9');
+if(edit){Object.assign(M.find(x=>x.id==edit),{name:n,dni:d,tel:c,age:a,user:u,sede:$('#mS').value,plan:$('#mP').value,status:$('#mE').value});toast('Cambios guardados')}else{if(t.length<6)return toast('La clave temporal debe tener al menos 6 caracteres');const m={id:nid++,name:n,dni:d,tel:c,age:a,user:u,mes:0,sede:$('#mS').value,plan:$('#mP').value,vence:+today+30*D,status:$('#mE').value,goal:3,wk:0,mo:0,cls:0,hrs:0,streak:0,obj:'Salud general',onb:{t:{perfil:0,asist:0,clase:0,eval:0}}};await setPw(m,t,true);M.unshift(m);toast('Registro creado. Entrega la clave temporal a '+n.split(' ')[0])}dlg.close();adm()}
+function askDel(i){del=i;$('#dTx').textContent='¿Eliminar a '+M.find(x=>x.id==i).name+'? Esta acción no se puede deshacer.';dlD.showModal()}
+function delOk(){M=M.filter(x=>x.id!=del);RV=RV.filter(x=>x.id!=del);rv();dlD.close();toast('Registrado eliminado');adm()}
+const waMsg=m=>`https://wa.me/${DEMO?WA:'51'+m.tel}?text=${encodeURIComponent('Hola '+m.name.split(' ')[0]+', tu plan '+m.plan+' de GymPro vence el '+fd(m.vence)+'. Renueva por S/ '+PR[m.plan]+' con Yape o Plin.')}`;
+function remind(i){if(DEMO)toast('Modo demo: el mensaje se abre hacia tu número');window.open(waMsg(M.find(x=>x.id==i)),'_blank','noopener')}
+function remindAll(){$('#fe').value='Por vencer';page=0;tbl();$('#tb').scrollIntoView({behavior:'smooth',block:'center'});toast('Filtrados los que vencen pronto: usa el botón WhatsApp de cada fila')}
+function csv(){const q=v=>{v=String(v);if(/^[=+\-@]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'},b=new Blob(['\ufeffNombre,DNI,Celular,Plan,Sede,Vence,Estado\n'+F.map(m=>[m.name,m.dni,m.tel,m.plan,m.sede,fd(m.vence),m.status].map(q).join(',')).join('\n')],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='registrados_gympro.csv';a.click()}
+
+const cur=()=>sess&&M.find(x=>x.id==sess.id);
+function prog(m){const p=Math.min(100,m.wk/m.goal*100);$('#pProg').innerHTML=`<h3>Mi progreso</h3><p class="mt" style="margin:6px 0 14px">Se actualiza solo con tu asistencia y tus clases.</p><div style="display:flex;justify-content:space-between"><b>Esta semana</b><span>${m.wk} de ${m.goal} entrenamientos</span></div><div class="bar" style="margin:6px 0 16px"><i style="width:${p}%"></i></div><div class="g2" style="grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px">${[['Este mes',m.mo+' sesiones'],['Clases completadas',m.cls],['Tiempo entrenado',m.hrs+' h'],['Racha',m.streak+' días']].map(k=>`<div class="kpi"><span class="mt">${k[0]}</span><b style="font-size:30px">${k[1]}</b></div>`).join('')}</div><div class="fm"><label>Meta semanal (días)<input id="gG" type="number" min="1" max="7" value="${m.goal}"></label><label>Objetivo<select id="gO">${OB.map(o=>`<option ${o==m.obj?'selected':''}>${o}</option>`).join('')}</select></label></div><button class="btn g" style="margin-top:12px" onclick="saveP()">Guardar meta</button>`}
+function saveP(){const m=cur(),g=Math.round(+$('#gG').value);if(!(g>=1&&g<=7))return toast('La meta semanal debe estar entre 1 y 7 días');m.goal=g;m.obj=$('#gO').value;toast('Meta guardada');portal()}
+function done(i){const m=cur(),x=gc(i);RES.delete(i);m.cls++;m.hrs++;toast('Completaste '+x.n+'. Suma a tu progreso.');portal()}
+const stars=n=>'★'.repeat(n)+'☆'.repeat(5-n),sn=n=>{const a=n.split(' ');return a[0]+' '+a[1][0]+'.'},em=s=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+let RV=(SEED?[[2,5,'Bajé 9 kg en cuatro meses. Las clases de las 6 am cambiaron mi rutina.'],[9,5,'Reservo desde el celular y veo cuánta gente hay antes de salir de casa.'],[17,4,'Mi entrenador ajusta mi plan cada dos semanas. Se nota el avance.']]:[]).map(r=>({id:M[r[0]].id,n:sn(M[r[0]].name),p:M[r[0]].plan,r:r[1],t:r[2]}));
+function rv(){const a=RV.reduce((s,x)=>s+x.r,0)/(RV.length||1);$('#rvAvg').textContent=RV.length?a.toFixed(1)+' de 5 · '+RV.length+' reseñas de registrados':'Sé el primero en dejar una reseña';$('#rvL').innerHTML=RV.map(x=>`<div class="card"><div class="st">${stars(x.r)}</div><p style="margin:8px 0">${e(x.t)}</p><p class="mt">${e(x.n)} · plan ${x.p}</p></div>`).join('')}rv();
+function rvForm(){const m=cur();$('#rvF').innerHTML=m?`<h3>Deja tu reseña</h3><p class="mt" style="margin:6px 0 14px">Publicarás como <b>${e(sn(m.name))}</b>, el nombre de tu cuenta. Si ya opinaste, esta reseña reemplaza la anterior.</p><label>Calificación<select id="rR"><option value="5">5 · Excelente</option><option value="4">4 · Muy bueno</option><option value="3">3 · Bueno</option><option value="2">2 · Regular</option><option value="1">1 · Malo</option></select></label><label style="margin:12px 0">Tu opinión<textarea id="rT" maxlength="200"></textarea></label><button class="btn g" onclick="review()">Publicar reseña</button>`:`<h3>Deja tu reseña</h3><p class="mt" style="margin:6px 0 14px">Solo opinan los registrados: ingresa con tu cuenta y tu reseña saldrá con tu nombre.</p><button class="btn g" onclick="go('login')">Ingresar</button>`}
+function review(){const m=cur(),t=$('#rT').value.trim();if(!m)return toast('Ingresa para dejar tu reseña');if(t.length<10)return toast('Escribe una opinión de al menos 10 caracteres');RV=RV.filter(x=>x.id!=m.id);RV.unshift({id:m.id,n:sn(m.name),p:m.plan,r:+$('#rR').value,t});$('#rT').value='';rv();toast('Gracias, '+m.name.split(' ')[0]+'. Tu reseña ya está publicada.')}
+const AE=CORREO;let MS=ld('gp_ms',[]);
+async function opina(){if(Date.now()-(opina.l||0)<30000)return toast('Espera unos segundos antes de enviar otro mensaje');const f=$('#oE').value.trim(),t=$('#oM').value.trim();if(!em(f))return toast('Escribe un correo válido');if(t.length<10)return toast('Cuéntanos un poco más (mínimo 10 caracteres)');opina.l=Date.now();MS.unshift({f,t,d:Date.now()});sv('gp_ms',MS);$('#oE').value=$('#oM').value='';const ok=await mail('GymPro · Nuevo mensaje de un cliente',{correo:f,mensaje:t,_replyto:f});toast(ok?'Mensaje enviado: ya llegó al correo del gimnasio':'Guardado en el panel (el correo no pudo enviarse ahora)')}
+async function testE(){const ok=await mail('GymPro · Correo de prueba',{mensaje:'Si lees esto, el correo de recepción funciona.'});toast(ok?'Enviado a '+AE+'. Revisa bandeja y spam':'No se pudo enviar: necesitas internet y abrir la página desde Netlify/GitHub, no como archivo')}
+function inbox(){leadsView();$('#aEm').textContent='Los mensajes se envían a '+AE+'. La primera vez, FormSubmit te manda un correo de activación: ábrelo (mira en spam) y confírmalo.'+(CORREO=='tucorreo@gmail.com'||WA=='51900000000'?' ⚠ Falta poner tu correo o WhatsApp reales en index.html.':'');$('#inb').innerHTML=MS.length?MS.map(x=>`<div class="row" style="align-items:flex-start"><div><b>${e(x.f)}</b> <span class="mt">${fd(x.d)}</span><p>${e(x.t)}</p></div><a href="https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(x.f)}&su=${encodeURIComponent('Respuesta de GymPro')}" target="_blank" rel="noopener"><button class="btn sm">Responder en Gmail</button></a></div>`).join(''):'<p class="mt">Aún no llegan mensajes. Envía uno desde Inicio → Dinos qué opinas.</p>'}
+let ad=0,ec=null;
+function ahor(){$('#adT').innerHTML=DAYS.map((d,i)=>`<button class="${i==ad?'on':''}" onclick="ad=${i};ahor()">${d}</button>`).join('');$('#adL').innerHTML=C.filter(x=>x.d==ad).sort((a,b)=>a.t.localeCompare(b.t)).map(x=>`<div class="row"><span class="t">${x.t}</span><div><b>${e(x.n)}</b><div class="mt">${x.c} · ${x.free} de ${x.cap} cupos libres</div></div><button class="btn sm" onclick="openC(${x.id})">Editar</button> <button class="btn sm" onclick="delC(${x.id})">Eliminar</button></div>`).join('')||'<p class="mt">No hay clases este día. Agrega una con "+ Nueva clase".</p>'}
+function openC(id){ec=id??null;const x=ec!=null?gc(ec):{d:ad,t:'18:00',n:'',c:CC[0],cap:20};$('#cT').textContent=ec!=null?'Editar clase':'Nueva clase';$('#cD').innerHTML=DAYS.map((d,i)=>`<option value="${i}">${d}</option>`).join('');$('#cC').innerHTML=CC.map(c=>`<option>${c}</option>`).join('');$('#cD').value=x.d;$('#cH2').value=x.t;$('#cN').value=x.n;$('#cC').value=x.c;$('#cK').value=x.cap;dC.showModal()}
+function saveC(){const n=$('#cN').value.trim(),t=$('#cH2').value,k=Math.round(+$('#cK').value);if(!n||!t||!(k>=1&&k<=60))return toast('Completa clase, hora y cupos (1 a 60)');const v={d:+$('#cD').value,t,n,c:$('#cC').value,cap:k};if(ec!=null){const x=gc(ec);x.free=Math.max(0,x.free+k-x.cap);Object.assign(x,v);toast('Clase actualizada')}else{C.push({id:cid++,free:k,...v});toast('Clase creada')}ad=v.d;dC.close();ahor();clases()}
+function delC(i){C=C.filter(x=>x.id!=i);RES.delete(i);ahor();clases();toast('Clase eliminada')}
+
+/* acceso y seguridad */
+let sess=null,pend=null,ws=0;
+const norm=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim(),hx=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join(''),slt=()=>hx(crypto.getRandomValues(new Uint8Array(8))),tmp=()=>'Gym'+(1000+crypto.getRandomValues(new Uint32Array(1))[0]%9000);
+const H=async(p,sa)=>hx(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(sa+':'+p)));
+async function setPw(o,p,must){o.salt=slt();o.hash=await H(p,o.salt);o.must=must}
+const SR=Object.fromEntries(SEDES.map(s=>[s[0],/Trujillo|Víctor/.test(s[0])?'La Libertad':'Lima'])),acc=m=>!m.hash?'Sin acceso':m.must?'Cambio pendiente':'Activo';
+Object.assign(M[0],{name:'Rosa Quispe Huamán',dni:'45218763',plan:'Élite',sede:'Trujillo Centro',vence:+today+22*D,status:'Activo',goal:5,wk:3,mo:17,cls:142,hrs:310,streak:21,obj:'Ganar músculo',age:34,mes:30});
+{const un=new Set();M.forEach(m=>{const p=norm(m.name).split(' ');let u=p[0]+'.'+p[1],k=2;while(un.has(u))u=p[0]+'.'+p[1]+k++;un.add(u);m.user=u;m.onb=null;m.tel='9'+m.dni})}
+M[0].res=new Set([C[2].id,C[8].id]);[2,8].forEach(i=>C[i].free=Math.max(0,C[i].free-1));
+const SK='gp_state_v1',SECURE=!!(window.crypto&&crypto.subtle);let SAVED=null,ready=false;
+try{SAVED=JSON.parse(localStorage.getItem(SK),(k,v)=>v&&v.__set?new Set(v.__set):v)}catch{}
+if(SAVED&&SAVED.M&&SAVED.C){M=SAVED.M;C=SAVED.C;RV=SAVED.RV||RV;nid=SAVED.nid||nid;cid=SAVED.cid||cid;clases();rv()}
+const AD={user:'admin',name:'Administrador'},READY=(async()=>{if(!SECURE)return;await setPw(AD,'Admin2026!',false);if(!SAVED){await setPw(M[0],'Gym2026!',false);for(const m of M.slice(1))if(R()<.65)await setPw(m,slt(),false)}ready=true})();
+function persist(){if(!ready)return;try{localStorage.setItem(SK,JSON.stringify({M,C,RV,nid,cid},(k,v)=>v instanceof Set?{__set:[...v]}:v))}catch{}}
+setInterval(persist,3000);addEventListener('pagehide',persist);
+function resetDemo(){if(confirm('Se borrarán los cambios hechos en este navegador y volverán los datos de ejemplo. ¿Continuar?')){[SK,'gp_ld','gp_ms'].forEach(k=>localStorage.removeItem(k));location.reload()}}
+$('#fs').innerHTML='<option value="">Todas</option>'+SEDES.map(s=>`<option>${s[0]}</option>`).join('');$('#fo').innerHTML='<option value="">Todos</option>'+OB.map(o=>`<option>${o}</option>`).join('');
+function clr(){['q','fr','fs','fp','fe','fo','fa','fg','fn'].forEach(i=>$('#'+i).value='');page=0;tbl()}
+function navR(){const r=sess?.role;$('#nav').innerHTML='<button data-v="inicio">Inicio</button>'+(r=='cliente'?'<button data-v="portal">Mi portal</button>':'')+(r=='admin'?'<button data-v="admin">Gestión Admin</button>':'')+(r?'<button data-a="out">Salir</button>':'<button data-v="login">Ingresar</button>');document.querySelector('#nav button').classList.add('on');rvForm()}
+$('#nav').onclick=ev=>{const b=ev.target.closest('button');if(b)b.dataset.a?logout():go(b.dataset.v)};
+document.addEventListener('keydown',k=>{if(k.key=='Enter'&&$('#v-login.on'))login()});
+async function login(){if(!SECURE)return toast('Para ingresar abre la página con HTTPS (Netlify) o localhost');await READY;const u=norm($('#lu').value),p=$('#lp').value,a=u=='admin'?AD:M.find(m=>m.user==u);if(!a||!a.hash||(await H(p,a.salt))!=a.hash)return toast('Usuario o contraseña incorrectos');$('#lp').value='';if(a.must){pend=a;go('pw');return}enter(a)}
+function enter(a){ws=0;if(a==AD){sess={role:'admin'};RES=new Set()}else{sess={role:'cliente',id:a.id};RES=a.res||(a.res=new Set())}navR();go(a==AD?'admin':a.onb&&!a.onb.done?'welcome':'portal');clases();toast('Hola, '+a.name.split(' ')[0])}
+function logout(){sess=null;pend=null;RES=new Set();navR();clases();go('inicio');toast('Sesión cerrada')}
+async function chgPw(){const a=pend,n=$('#pn').value;if(n.length<8||!/[a-z]/i.test(n)||!/\d/.test(n))return toast('Mínimo 8 caracteres, con letras y números');if(n!==$('#pr').value)return toast('Las contraseñas no coinciden');if((await H(n,a.salt))==a.hash)return toast('Elige una distinta a la actual');await setPw(a,n,false);$('#pn').value=$('#pr').value='';pend=null;if(sess)toast('Contraseña actualizada');enter(a)}
+async function resetPw(i){const m=M.find(x=>x.id==i),t=tmp();await setPw(m,t,true);tbl();$('#rpT').innerHTML=`Clave temporal de <b>${e(m.name)}</b> (usuario <b>${e(m.user)}</b>):<br><b style="color:var(--n);font-size:26px">${t}</b><br><br>Entrégasela en persona o por WhatsApp. Se muestra solo ahora y deberá cambiarla al ingresar. La clave anterior no se puede recuperar.`;dlR.showModal()}
+/* bienvenida */
+function wel(){const m=cur(),b=$('#welB');if(!m)return;if(ws==0)b.innerHTML=`<h2>¡Bienvenido/a, ${e(m.name.split(' ')[0])}!</h2><p class="mt" style="margin:10px 0 18px">Tu plan <b>${m.plan}</b> en la sede <b>${m.sede}</b> ya está activo. En dos pasos dejamos tu cuenta lista: tu objetivo y tu primera clase.</p><button class="btn g" onclick="ws=1;wel()">Empezar</button>`;
+else if(ws==1)b.innerHTML=`<h3>Paso 1 de 2 · Tu objetivo</h3><div class="fm" style="margin:14px 0"><label>Objetivo<select id="wO">${OB.map(o=>`<option ${o==m.obj?'selected':''}>${o}</option>`).join('')}</select></label><label>Meta semanal (días)<input id="wG" type="number" min="1" max="7" value="${m.goal}"></label><label>Peso (kg)<input id="wP" type="number"></label><label>Talla (cm)<input id="wT" type="number"></label></div><button class="btn g" onclick="wsv()">Continuar</button>`;
+else b.innerHTML=`<h3>Paso 2 de 2 · Reserva tu primera clase</h3><p class="mt" style="margin:6px 0">Es opcional: puedes hacerlo después desde Inicio.</p>${C.filter(x=>x.d==day).sort((a,c)=>a.t.localeCompare(c.t)).slice(0,4).map(x=>`<div class="row"><span class="t">${x.t}</span><div><b>${e(x.n)}</b><div class="mt">${e(x.c)}</div></div><button class="btn sm ${RES.has(x.id)?'':'g'}" onclick="reserve(${x.id})">${RES.has(x.id)?'Cancelar':'Reservar'}</button></div>`).join('')}<button class="btn g" style="margin-top:16px" onclick="wend()">Ir a mi portal</button>`}
+function wsv(){const g=Math.round(+$('#wG').value);if(!(g>=1&&g<=7))return toast('La meta semanal debe estar entre 1 y 7 días');const m=cur();m.obj=$('#wO').value;m.goal=g;ws=2;wel()}
+function wend(){const m=cur();m.onb.t.perfil=1;m.onb.done=1;ws=0;go('portal')}
+function onbR(m){const o=m.onb,el=$('#pOnb');if(!o){el.innerHTML='';return}const T=[['perfil','Completar tu perfil y objetivo'],['asist','Marcar tu primera asistencia'],['clase','Reservar tu primera clase'],['eval','Pedir tu evaluación corporal gratuita']],n=T.filter(t=>o.t[t[0]]).length;el.innerHTML=`<div class="card" style="border-color:var(--n)"><h3>Seguimiento de bienvenida · ${n} de 4</h3><div class="bar" style="margin:10px 0"><i style="width:${n*25}%"></i></div>${T.map(t=>`<div class="row"><span style="width:24px;color:var(--n)">${o.t[t[0]]?'✓':'○'}</span><div>${t[1]}</div>${t[0]=='eval'&&!o.t.eval?'<button class="btn sm g" onclick="evl()">Pedir</button>':''}</div>`).join('')}${n==4?'<p style="margin-top:10px">¡Listo! Completaste tu bienvenida.</p>':''}</div>`}
+function evl(){cur().onb.t.eval=1;toast('Evaluación solicitada: te contactaremos para agendarla');portal()}
+const sugU=()=>{if(!edit){const p=norm($('#mN').value).split(/\s+/);$('#mU').value=p.length>1?p[0]+'.'+p[1]:p[0]}};
+navR();
+$('.wa').href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hola GymPro, quiero información');
+if(!DEMO)$('#demoAcc').style.display='none';
+addEventListener('popstate',()=>{const h=location.hash.slice(1);go(document.getElementById('v-'+h)?h:'inicio',1)});
+</script></body></html>
